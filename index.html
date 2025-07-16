@@ -1,35 +1,203 @@
-  <div class="container">
-    <h2>Crate Keys</h2>
-    <div class="store-grid">
-      <div class="store-item">
-        <h3>Common Key</h3>
-        <div class="price">$1.00</div>
-        <div class="desc">Unlocks common crates with basic rewards.</div>
-        <a class="btn" href="enter link here" target="_blank">Buy Now</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DavidDupe Store</title>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: white;
+      overflow-x: hidden;
+    }
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      color: red;
+      font-weight: bold;
+      border-bottom: 2px solid red;
+    }
+    .store-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .store-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #ff3333;
+      border-bottom: 2px solid #ff3333;
+      padding-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .item {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    }
+    .item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+    .item p {
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+    .buy-button {
+      background: #ff3333;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .buy-button:hover {
+      background: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <header>DavidDupe Store</header>
+
+  <div class="store-section">
+    <h2>Ranks</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>VIP</h3>
+        <p>Basic rank with special permissions.</p>
+        <a href="#" class="buy-button">Buy Now</a>
       </div>
-      <div class="store-item">
-        <h3>Gold Key</h3>
-        <div class="price">$1.50</div>
-        <div class="desc">Unlocks gold crates with better rewards.</div>
-        <a class="btn" href="enter link here" target="_blank">Buy Now</a>
+      <div class="item">
+        <h3>VIP+</h3>
+        <p>Includes VIP perks and more!</p>
+        <a href="#" class="buy-button">Buy Now</a>
       </div>
-      <div class="store-item">
-        <h3>Crimson Key</h3>
-        <div class="price">$2.00</div>
-        <div class="desc">Unlocks crimson crates with rare items.</div>
-        <a class="btn" href="enter link here" target="_blank">Buy Now</a>
+      <div class="item">
+        <h3>MVP</h3>
+        <p>Mid-tier rank with bonus features.</p>
+        <a href="#" class="buy-button">Buy Now</a>
       </div>
-      <div class="store-item">
-        <h3>Amethyst Key</h3>
-        <div class="price">$2.50</div>
-        <div class="desc">Unlocks amethyst crates with epic rewards.</div>
-        <a class="btn" href="enter link here" target="_blank">Buy Now</a>
+      <div class="item">
+        <h3>MVP+</h3>
+        <p>All MVP perks and added multipliers.</p>
+        <a href="#" class="buy-button">Buy Now</a>
       </div>
-      <div class="store-item">
-        <h3>Prime Key</h3>
-        <div class="price">$3.00</div>
-        <div class="desc">Unlocks prime crates with legendary prizes.</div>
-        <a class="btn" href="enter link here" target="_blank">Buy Now</a>
+      <div class="item">
+        <h3>ELITE</h3>
+        <p>High-tier benefits and access.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>LEGEND</h3>
+        <p>Legendary status with major perks.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>GOD</h3>
+        <p>Top rank with exclusive powers.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>PRIDE</h3>
+        <p>Limited-time special edition rank.</p>
+        <a href="#" class="buy-button">Buy Now</a>
       </div>
     </div>
   </div>
+
+  <div class="store-section">
+    <h2>Crate Keys</h2>
+    <div class="grid">
+      <div class="item">
+        <h3>Common Key</h3>
+        <p>Unlock basic crate rewards.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>Gold Key</h3>
+        <p>Contains valuable mid-tier loot.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>Crimson Key</h3>
+        <p>Unlocks powerful crimson-tier rewards.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>Amethyst Key</h3>
+        <p>Rare key for amethyst crate loot.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+      <div class="item">
+        <h3>Prime Key</h3>
+        <p>Premium rewards only found in prime crates.</p>
+        <a href="#" class="buy-button">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    tsParticles.load("tsparticles", {
+      fpsLimit: 60,
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ff3333" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: { min: 1, max: 3 } },
+        links: {
+          enable: true,
+          distance: 120,
+          color: "#ff3333",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "none",
+          outMode: "bounce"
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { quantity: 4 }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+</body>
+</html>
